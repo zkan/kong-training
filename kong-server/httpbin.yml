@@ -4,6 +4,8 @@ services:
   api1:
     image: kennethreitz/httpbin
     restart: always
+    ports:
+      - 127.0.0.1:8888:80
 
   api2:
     image: kennethreitz/httpbin
